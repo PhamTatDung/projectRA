@@ -1,0 +1,18 @@
+main{
+    margin-bottom: 400px;
+}
+.title__page{
+    margin-top: 50px;
+}
+.login__form{
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.login__form--mail, .login__form--password{
+    margin-bottom: 10px;
+}
+.form__login--warring{
+    color: red;
+    display: none;
+}

@@ -1,0 +1,129 @@
+.product-detail__info {
+    padding: 0px 12px;
+}
+
+.product-detail {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.product-detail--img {
+    box-shadow: 0px 2px 5px #000;
+}
+
+.product-detail--img figure {
+    width: 100%;
+}
+
+.product-detail--img figure img {
+    width: 100%;
+    cursor: pointer;
+    transition: width 0.5s;
+   
+}
+
+.product-detail__info--name {
+    font-size: 24px;
+    font-weight: none;
+}
+
+.product-detail__info--price p {
+    font-size: 24px;
+    color: #E50000;
+}
+
+.product-detail__info--raiting {
+    color: goldenrod;
+}
+
+.product-detail__info--title-desc {
+    font-size: 20px;
+    margin-top: 12px;
+    color: #888;
+}
+
+.product-detail__info--title-desc p {
+    border-bottom: 1px solid #888;
+}
+
+.product-detail__info--content-desc {
+    color: #888;
+    font-size: 16px;
+}
+
+.product-detail__size {
+    margin-top: 30px;
+}
+
+.product-detail__size--title {
+    margin-right: 50px;
+}
+
+.product-detail__size--number {
+    padding: 10px;
+    border: 1px solid #000;
+    cursor: pointer;
+    margin: 0px 4px;
+}
+
+.product-detail__quality {
+    margin-top: 28px;
+}
+
+.product-detail__quality--number {
+    display: inline-block;
+    border: 1px solid#000;
+    padding: 8px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+.product-detail__quality--number input{
+    width: 50px;
+    border: none;
+    text-align: center;
+}
+.product-detail__quality--number input:focus{
+    outline: none;
+}
+.product-detail__quality--number 
+.product-detail__quality--title {
+    margin-right: 16px;
+}
+.product-detail__action{
+    margin-top: 28px;
+}
+.product-detail__action--add-to-cart, .product-detail__action--buy{
+    padding: 10px 16px;
+    min-width: 200px;
+    color: #fff;
+}
+.product-detail__action--add-to-cart{
+
+}
+.view{
+    position: absolute;
+    width: 600px !important;
+    display: block;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000001;
+    margin-top: 10px;
+    border: 1px solid #fff;
+ 
+
+}
+.mark{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: #000;
+    z-index: 1000000;
+    display: none;
+    opacity: 0.8;
+}
+.show{
+    display: block;
+}

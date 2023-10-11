@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="mask"></div>
+    <!-- header -->
+    <header>
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-xl-2 col-md-3 col-sm-6 col-6">
+                    <div id="logo" class="">
+                        <a href="../index.html">
+                            <figure>
+                                <img src="../assets/images/logo/logo1.png" alt="logo image">
+                            </figure>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-xl-8 header__seach--input">
+                    <input class="js-search--input" type="text" placeholder="Tìm Kiếm...">
+                    <i class="fa-solid fa-magnifying-glass header__seach--btn js-header__seach--btn"></i>
+                    <div class="search__results js-search__results">
+                        <p class="search__results--key">Kết quả tìm kiếm cho "suit"</p>
+                        <p class="search__results--heading">Sản Phẩm Bạn Đang Tìm Kiếm:</p>
+                        <ul class="search__results--list">
+                            <!-- <li class="search__results--item">
+                                <a href="#" class="search__results--link">
+                                    <div class="row">
+                                        <div class="col-xl-2">
+                                            <div class="search__results--img">
+                                                <figure>
+                                                    <img src="./assets/images/product/vest/vest1.webp" alt="">
+                                                </figure>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-10">
+                                            <div class="search__results--info">
+                                                <p>Áo Vest Adam Đen Kẻ Ô Chìm - Av252</p>
+                                                <p>3,200,000₫</p>
+                                            </div>  
+                                        </div>
+                                    </div>
+                                </a>
+                            </li> -->
+                        </ul>
+                    </div>
+                </div>
+                <nav class="navbar header__nav col-xl-8">
+                    <ul class="navbar-nav justify-content-center">
+                        <li class="nav-item active"><a class="nav-link" href="../index.html">Trang Chủ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Thông Tin Shop</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Bô Sưu Tập</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Kiểm Tra Đơn Hàng</a></li>
+                    </ul>
+                </nav>
+                <div class="col-xl-2 col-md-3 col-sm-6 col-6">
+                    <div class="header__action">
+                        <div class=" header__action--icon js-header__search">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <div class="header__account header__action--icon js-header__account"></div>
+                        <div class="js-header__cart header__cart header__action--icon">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                            <span class="js-header__cart--number header__cart--number">0</span>
+                        </div>
+                        <div class="js-header__bar header__action--icon header__bar--btn">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- carousel -->
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner js-carousel-inner">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <!-- policies  -->
+        <section id="policies">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-3 policies__item">
+                        <div class="policies__item--icon">
+                            <i class="fa-solid fa-truck-fast"></i>
+                        </div>
+                        <div class="policies__item--info">
+                            <h3 class="policies__item--title">Giao hàng toàn quốc</h3>
+                            <div class="policies--desc">Nhận hàng trong vòng 3 ngày</div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 policies__item">
+                        <div class="policies__item--icon">
+                            <i class="fa-solid fa-gift"></i>
+                        </div>
+                        <div class="policies__item--info">
+                            <h3 class="policies__item--title">Quà tặng hấp dẫn</h3>
+                            <div class="policies--desc">Nhiều ưu đãi khuyến mãi hot</div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 policies__item">
+                        <div class="policies__item--icon">
+                            <i class="fa-solid fa-medal"></i>
+                        </div>
+                        <div class="policies__item--info">
+                            <h3 class="policies__item--title">Bảo đảm chất lượng</h3>
+                            <div class="policies--desc">Sản phẩm đã được kiểm định</div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 policies__item">
+                        <div class="policies__item--icon">
+                            <i class="fa-solid fa-headset"></i>
+                        </div>
+                        <div class="policies__item--info">
+                            <h3 class="policies__item--title">Hotline: 0964838828</h3>
+                            <div class="policies--desc">Dịch vụ hỗ trợ bạn 24/7</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="category">
+            <div class="container">
+                <h2 class="text-center">DANH MỤC</h2>
+                <div class="row">
+                    <div class="col-xl-6">
+                        <div class="category__item">
+                            <a href="./pages/products.html?categoryID=1" class="category__item--link">
+                                <div class="category__item--img">
+                                    <figure>
+                                        <img src="./assets/images/category/category1.webp" alt="">
+                                    </figure>
+                                </div>
+                                <div class="mask"></div>
+                                <div class="category__item--infoBtn">
+                                    <a href="./pages/products.html?categoryID=1">XEM THÊM</a>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <div class="category__item">
+                                    <a href="./pages/products.html?categoryID=2" class="category__item--link">
+                                        <div class="category__item--img">
+                                            <figure>
+                                                <img src="./assets/images/category/category2.webp" alt="">
+                                            </figure>
+                                        </div>
+                                        <div class="mask"></div>
+                                        <div class="category__item--infoBtn">
+                                            <a href="./pages/products.html?categoryID=2">XEM THÊM</a>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="category__item">
+                                    <a href="./pages/products.html?categoryID=3" class="category__item--link">
+                                        <div class="category__item--img">
+                                            <figure>
+                                                <img src="./assets/images/category/category3.png" alt="">
+                                            </figure>
+                                        </div>
+                                        <div class="mask"></div>
+                                        <div class="category__item--infoBtn">
+                                            <a href="./pages/products.html?categoryID=3">XEM THÊM</a>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row category__item--shoes">
+                                <div class="col-xl-12">
+                                    <div class="category__item">
+                                        <a href="./pages/products.html?categoryID=4" class="category__item--link">
+                                            <div class="category__item--img">
+                                                <figure>
+                                                    <img src="./assets/images/category/category4.webp" alt="">
+                                                </figure>
+                                            </div>
+                                            <div class="mask"></div>
+                                            <div class="category__item--infoBtn">
+                                                <a href="./pages/products.html?categoryID=4">XEM THÊM</a>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="collection">
+            <div class="container">
+                <h2 class="text-center">BỘ SƯU TẬP MỚI</h2>
+                <div class="row js-collection__item"></div>
+            </div>
+        </section>
+        <section id="about-us">
+            <div class="about-us__video">
+                <div class="container">
+                    <h2 class="text-center">THẾ GIỚI VEST NAM</h2>
+                    <iframe width="100%" height="800px"
+                        src="https://www.youtube.com/embed/Szgcckuib7I?si=r0yLVdaNBvbJrpRs" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="about-us__blog">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-6">
+                            <div class="about-us__blog--img">
+                                <figure><img src="./assets/images/contact/about1.jpg" alt=""></figure>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 about-us__blog--dect">
+                            <div class="about-us__blog--text">
+                                <h2 class="about-us__blog--heading">Giới Thiệu Về Thế Giới Vest Nam</h2>
+                                <p>"Bộ Vest Nam" là cách gọi phổ biến và thân thuộc từ lâu của người Việt Nam để chỉ bộ
+                                    trang phục
+                                    nam gồm áo ba mảnh, quần tây và có thể kèm theo cà vạt. Thuật ngữ này thể hiện sự
+                                    gắn kết với
+                                    truyền thống và văn hóa Việt. Trong khi đó, "Men's Suits" là cách gọi tiếng Anh
+                                    thường được sử
+                                    dụng ở phương Tây để chỉ trang phục nam tương tự. Chúng tôi lựa chọn đặt tên "THẾ
+                                    GIỚI VEST NAM"
+                                    nhằm mang ý nghĩa gần gũi và thể hiện sự thấu hiểu hơn với người Việt.</p>
+                                <a href="#" class="btn btn-dark">Đặt Hàng Ngay</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3">
+                    <div class="footer__category">
+                        <h5>DANH MỤC SẢN PHẨM</h5>
+                        <ul>
+                            <li><a href="#">SUIT</a></li>
+                            <li><a href="#">T-SHIRT</a></li>
+                            <li><a href="#">SHIT</a></li>
+                            <li><a href="#">SHOES</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-xl-3">
+                    <div class="footer__policy">
+                        <h5>CHÍNH SÁCH CỬA HÀNG</h5>
+                        <ul>
+                            <li><a href="#">Chính sách đổi trả</a></li>
+                            <li><a href="#">Chính sách vận chuyển giao hàng</a></li>
+                            <li><a href="#">Chính sách bảo hành</a></li>
+                            <li><a href="#">Chính sách bảo mật thông tin</a></li>
+                            <li><a href="#">Chích sách giá cả và khuyến mãi</a></li>
+                            <li><a href="#">Chính sách đăng ký và thành viên</a></li>
+                            <li><a href="#">Chính sách bảo vệ thương hiệu</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-xl-3">
+                    <div class="footer__about">
+                        <h5>THÔNG TIN CỬA HÀNG</h5>
+                        <ul>
+                            <li><a href="#">Cửa hàng vest DP số 1 thế giới</a></li>
+                            <li><a href="#">Mã số thuế: 0314912670</a></li>
+                            <li><a href="#">Cấp ngày: 09/03/2018 tại Phòng đăng ký kinh doanh Sở Kế hoạch và Đầu tư
+                                    Thành phố Hồ Chí Minh</a></li>
+                            <li><a href="#"> <i class="fa-solid fa-phone" style="font-size: 14px;"></i> 0314912670</a>
+                            </li>
+                            <li><a href="#"><i class="fa-regular fa-envelope"></i> dungpt@gmail.com</a></li>
+                            <li><a href="#"><i class="fa-solid fa-location-dot"></i> ra fukuoka JV 230807</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-xl-3">
+                    <div class="footer__payment">
+                        <h5>HÌNH THỨC THANH TOÁN</h5>
+                        <ul>
+                            <li><a href="#">Tiền mặt</a></li>
+                            <li><a href="#">Chuyển khoản</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__map">
+            <figure><img src="./assets/images/map/map.jpg" alt=""></figure>
+        </div>
+        <div class="footer__bottom">
+            <p>@ Powered by Pham Tat Dung @</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./script/script.js"></script>
+    <script src="./script/home.js"></script>
+
+
+</body>
+
+</html>
